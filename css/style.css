@@ -49,11 +49,11 @@ a {
 	color:#000;
 }
 a:hover {
-	color:#e78f00;
+	color:darkgreen;
 }
 
 h1 {
-	color:#f19500;;
+	color:mediumseagreen;;
 	font-size:28px;
 	line-height:1.2;
 }
@@ -62,7 +62,7 @@ h1 a {
 	text-decoration:none;
 }
 h1 a:hover {
-	color:#e78f00;
+	color:darkgreen;
 	text-decoration:underline;
 }
 
@@ -71,15 +71,15 @@ h2 {
 	padding-left:10px;
 	font-size:18px;
 	color:#000;
-	border-left:5px solid #e78f00;
+	border-left:5px solid darkgreen;
 }
 
 h3 {
 	margin-bottom:0.5em;
 	padding:2px 5px;
-	color:#e78f00;
+	color:darkgreen;
 	font-size:16px;
-	border-bottom:1px solid #e78f00;
+	border-bottom:1px solid darkgreen;
 }
 
 h4 {
@@ -89,7 +89,7 @@ h4 {
 }
 h4:before {
 	content:"\002605";
-	color:#f19500;
+	color:mediumseagreen;
 }
 
 h5 {
@@ -123,7 +123,7 @@ em {
 
 strong {
 	font-weight:bold;
-	color:#f19500;
+	color:mediumseagreen;
 }
 
 pre {
@@ -201,20 +201,38 @@ header h1 {
 	display:block;
 	padding:5px 10px 5px 29px;
 	color:#fff;
-	background:#f19500;
+	background:mediumseagreen;
 	border-radius:4px;
 	text-decoration:none;
-	background:#f19500 url(../images/mail.png) 10px 50% no-repeat;
+	background:mediumseagreen url(../images/mail.png) 10px 50% no-repeat;
 }
 .contact a:hover {
 	color:#fff;
-	background:#e78f00 url(../images/mail.png) 10px 50% no-repeat;
+	background:darkgreen url(../images/mail.png) 10px 50% no-repeat;
 }
 
 .summary {
 	clear:both;
 }
 
+.btn-square-so-pop {
+  width:200px;
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: forestgreen;/*色*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  border: solid 2px green;/*線色*/
+}
+
+.btn-square-so-pop:active {
+  /*押したとき*/
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
 /*================================================
  *  グローバルナビゲーション
  ================================================*/
@@ -347,10 +365,10 @@ footer {
 	text-decoration:none;
 }
 .totop img {
-	background:#f19500;
+	background:mediumseagreen;
 }
 .totop img:hover {
-	background:#e78f00;
+	background:darkgreen;
 }
 
 /*================================================
@@ -404,11 +422,12 @@ footer {
 /*================================================
  *  トップページ
  ================================================*/
-/* スライドショー */
+/* スライド */
 .slide {
 	display:none;
 	position:relative;
 	overflow:hidden;
+	height:250px;
 }
 
 .slidePrev {
@@ -492,7 +511,7 @@ footer {
 	cursor:pointer;
 }
 .controlNav span.current {
-	background:#f19500;
+	background:mediumseagreen;
 }
 
 /* トップナビ */
@@ -532,7 +551,7 @@ footer {
 .topNaviCon:hover {
 	color:#000;
 	background:#fff9f5 none repeat scroll 0 0;
-	border:1px solid #f19500;
+	border:1px solid mediumseagreen;
 	transition:background 0s ease 0s, border 0.5s ease-out 0s;
 }
 .topNaviCon h2 {
@@ -540,11 +559,11 @@ footer {
 	padding:0;
 	font-size:14px;
 	font-weight:bold;
-	color:#f19500;
+	color:mediumseagreen;
 	border:none;
 }
 .topNaviCon:hover h2 {
-	color:#f19500;
+	color:mediumseagreen;
 }
 .topNaviCon p {
 	margin:10px;
@@ -671,5 +690,9 @@ footer {
 		float:none;
 		margin-right:0;
 		margin-bottom:10px;
+	}
+
+	.slide {
+		height:150px;
 	}
 }
