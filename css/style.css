@@ -216,9 +216,8 @@ header h1 {
 }
 
 .btn-square-so-pop {
-  width:200px;
   position: relative;
-  display: inline-block;
+  display: block;
   padding: 0.25em 0.5em;
   text-decoration: none;
   color: #FFF;
