@@ -114,6 +114,7 @@ p {
 }
 
 img {
+    max-width: 100%;
 	vertical-align:bottom;
 }
 
@@ -179,6 +180,23 @@ td {
 	padding:10px;
 	text-align:left;
 	border:1px solid #ddd;
+}
+
+/* ▼キャプション付き画像全体を囲むボックスの装飾 */
+figure {
+    display: inline-block;   /* インラインブロック化 */
+    margin: 0px 3px 7px 0px; /* 外側に余白を追加(※右に3px・下に7px) */
+    background-color: #ccc;  /* 背景色 */
+}
+/* ▼画像に対する装飾 */
+figure img {
+    display: block;          /* 余計な余白が出ないようにする */
+    margin: 0px 0px 3px 0px; /* 下側にだけ3pxの余白を追加 */
+}
+/* ▼キャプションに対する装飾 */
+figcaption {
+    font-size: 0.9em;        /* 文字サイズを90%に */
+    text-align: center;      /* 中身をセンタリング */
 }
 
 /*================================================
@@ -392,13 +410,14 @@ footer {
 	background:url(../images/check.png) 0 5px no-repeat;
 }
 
-.photo {
+.topic {
 	overflow:hidden;
 	margin:20px 0;
 	padding:10px;
 	border:5px solid #ddd;
 	background:#fff;
 }
+
 
 .imgL {
 	float:left;
