@@ -114,7 +114,7 @@ p {
 }
 
 img {
-    max-width: 100%;
+ /*   max-width: 100%;  */
 	vertical-align:bottom;
 }
 
@@ -196,6 +196,9 @@ figure img {
 .solo{
 	width:90px;
 	height:180px;
+}
+.show{
+	max-width:100%;
 }
 /* ▼キャプションに対する装飾 */
 figcaption {
