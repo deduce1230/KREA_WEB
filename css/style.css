@@ -449,7 +449,6 @@ footer {
 	display:none;
 	position:relative;
 	overflow:hidden;
-	height:250px;
 }
 
 .slidePrev {
@@ -779,7 +778,4 @@ input[type=submit]:hover{
 		margin-bottom:10px;
 	}
 
-	.slide {
-		height:150px;
-	}
 }
