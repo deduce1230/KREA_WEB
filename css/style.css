@@ -425,7 +425,6 @@ footer {
 	background:#fff;
 }
 
-
 .imgL {
 	float:left;
 	margin:0 0.5em 0.5em 0;
@@ -434,6 +433,11 @@ footer {
 .imgR {
 	float:right;
 	margin:0 0 0.5em 0.5em;
+}
+
+.imgC {
+	text-align: center;
+	margin:1em;
 }
 
 .info dt {
@@ -684,6 +688,9 @@ input[type=submit]:hover{
 	#contents {
 		width:100%;
 	}
+
+    .desktopHidden { display:none;}
+    .mobileHidden { display:inline;}
 }
 
 /*================================================
