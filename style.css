@@ -114,6 +114,7 @@ p {
 }
 
 img {
+ /*   max-width: 100%;  */
 	vertical-align:bottom;
 }
 
@@ -179,6 +180,30 @@ td {
 	padding:10px;
 	text-align:left;
 	border:1px solid #ddd;
+}
+
+/* ▼キャプション付き画像全体を囲むボックスの装飾 */
+figure {
+    display: inline-block;   /* インラインブロック化 */
+    margin: 0px 3px 7px 0px; /* 外側に余白を追加(※右に3px・下に7px) */
+    background-color: #ccc;  /* 背景色 */
+}
+/* ▼画像に対する装飾 */
+figure img {
+    display: block;          /* 余計な余白が出ないようにする */
+    margin: 0px 0px 3px 0px; /* 下側にだけ3pxの余白を追加 */
+}
+.solo{
+	width:90px;
+	height:180px;
+}
+.show{
+	max-width:100%;
+}
+/* ▼キャプションに対する装飾 */
+figcaption {
+    font-size: 0.9em;        /* 文字サイズを90%に */
+    text-align: center;      /* 中身をセンタリング */
 }
 
 /*================================================
@@ -392,7 +417,7 @@ footer {
 	background:url(../images/check.png) 0 5px no-repeat;
 }
 
-.photo {
+.topic {
 	overflow:hidden;
 	margin:20px 0;
 	padding:10px;
@@ -408,6 +433,11 @@ footer {
 .imgR {
 	float:right;
 	margin:0 0 0.5em 0.5em;
+}
+
+.imgC {
+	text-align: center;
+	margin:1em;
 }
 
 .info dt {
@@ -426,7 +456,6 @@ footer {
 	display:none;
 	position:relative;
 	overflow:hidden;
-	height:250px;
 }
 
 .slidePrev {
@@ -573,6 +602,71 @@ footer {
 }
 
 /*================================================
+ *  コンタクトフォーム
+ ================================================*/
+.contact-form {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+.contact-form .item {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.contact-form .item.no-label {
+  padding: 5px 0px 5px 60px;
+}
+.contact-form .item .label {
+  float: left;
+  padding: 5px;
+  margin:0;
+}
+.contact-form .item .radio-group{
+  padding: 5px 0px 5px 60px;
+}
+.contact-form .item input[type=text],
+.contact-form .item input[type=tel],
+.contact-form .item input[type=email],
+.contact-form .item textarea {
+  display: block;
+  margin-left: 60px;
+  width: 75%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+.contact-form .item ::placeholder {
+  color: #ccc;
+}
+.contact-form .item textarea {
+  outline: none;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+input[type=submit] {
+  border: none;
+  outline: none;
+  display: block;
+  line-height: 30px;
+  width: 160px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  background-color: #696;
+  border-bottom: 4px solid #464;
+  cursor:pointer;
+
+  box-sizing: content-box;
+  transition:0.1s ease all
+}
+input[type=submit]:hover{
+  opacity:0.6;
+}
+
+/*================================================
  *  タブレット向けデザイン
  ================================================*/
 /* スクロールバーを考慮して20px大きいサイズで切り替え */
@@ -594,6 +688,9 @@ footer {
 	#contents {
 		width:100%;
 	}
+
+    .desktopHidden { display:none;}
+    .mobileHidden { display:inline;}
 }
 
 /*================================================
@@ -691,7 +788,4 @@ footer {
 		margin-bottom:10px;
 	}
 
-	.slide {
-		height:150px;
-	}
 }
