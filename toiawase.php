@@ -7,7 +7,6 @@
 <meta name="keywords" content="バイオリン教室,ヴァイオリン教室,東京,品川区,高輪台,港区,白金台,五反田,つくば,茨城県,個人レッスン">
 <meta name="description" content="東京都品川区（高輪台駅近く）と茨城県つくば市にあるバイオリン教室（つくば教室は水曜日のみ）">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="style_X.css">
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
@@ -71,7 +70,7 @@ $subject1 = "WEBサイトよりお問い合わせを受け付けました";
 sendmail($from1, $from1, $subject1, $MailMessage);
 
 $subject1 = "WEBサイトよりお問い合わせを受け付けました";
-$MailMessage .= "お問い合せありがとうございました。２・３日中にご連絡いたします。\n\n";
+$MailMessage .= "お問い合せありがとうございました。近日中にご連絡いたします。\n\n";
 $MailMessage .= "クレアヴァイオリン教室\n"; 
 $MailMessage .= "〒141-0022　東京都品川区東五反田4-3-33";
 
